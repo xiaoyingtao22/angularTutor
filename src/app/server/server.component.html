@@ -1,4 +1,26 @@
-<h4>This is a Component Example. </h4>
+<div class = "div1"><span style="color:deepskyblue">Step 1</span><span> - Please enter the ingredients</span> </div>
+<div class="div2">
+  <label style="margin-right: 15px" >Cooking Ingredients:</label>
+  <input [(ngModel)]="ingredientcomp" style="width:150px;height:35px;margin-right:15px;background: #fff;" type="text">
+  <button class="btn btn-success" style="width:80px;height:35px" (click)="addGredient()" >Add</button>
+</div>
+<div class = "div3">
+  <span style="color:deepskyblue">Step 2</span><span> - Cook the ingredients</span>
+</div>
+<div class="div4">
+  <label style="margin-right: 15px" >Ingredients in pot:</label>
+  <div style="border:solid 2px;width:200px;height:200px">
+    <div *ngFor="let ingredient of ingredients" style="margin-left:30%;margin-top:5%">
+      {{ingredient}}
+    </div>
+    <div *ngIf="success"style="font-size:18px;margin-left:15%;margin-top:42%;color:mediumvioletred"> {{dish}}Cooked! </div>
+    <div *ngIf="fail" style="font-size:18px;margin-left:12%;margin-top:45%;color:darkorange"> Nothing Cooked! </div>
+  </div>
+</div>
+<div class="div5">
+  <button class="btn btn-dark"  (click)="checkGredient()" >COOK IN THE KITCHEN</button>
+</div>
+<!--<h4>This is a Component Example. </h4>
 <p> Server with ID {{ serverId }}  is {{ serverStatus }} </p>
 <p> {{ 'Server' }} with ID {{ serverId }}  is {{ serverStatus }} </p>
 <p> {{ 'Server' }} with ID {{ serverId }}  is {{ getServerStatus() }} </p>
@@ -48,3 +70,4 @@
     <div><span style="color: cornflowerblue; margin-right: 5px;">Student Major: </span> <span>{{ student.major }}</span></div>
   </div>
 </div>
+-->

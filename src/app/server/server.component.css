@@ -6,3 +6,41 @@
   width: 300px;
   border-color: cornflowerblue;
 }
+.div1{
+  margin-left:29%;
+
+  font-size: 25px;
+}
+.div2{
+
+  display:flex;
+  position:absolute;
+  left:29%;
+  top:20%;
+  width:100%;
+  height:20%;
+}
+.div3{
+  position:absolute;
+  top:35%;
+  margin-left:29%;
+  font-size: 25px;
+}
+.div4{
+  display:flex;
+  position:absolute;
+  left:29%;
+  top:45%;
+  width:100%;
+  height:40%;
+}
+.div5{
+  position:absolute;
+  left:40.7%;
+  top:80%;
+  width:100%;
+  height:10%;
+
+}
+
+
